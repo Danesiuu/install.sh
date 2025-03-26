@@ -392,8 +392,8 @@ hackback_panel() {
   echo -e "${BLUE}[+] =============================================== [+]${NC}"
   echo -e "                                                       "
   # Minta input dari pengguna
-read -p "Masukkan Username Panel: " user
-read -p "password login " psswdhb
+read -p "Masukkan Username Panel: " zeroo
+read -p "password login " zeroo
   #!/bin/bash
 cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 
@@ -401,10 +401,10 @@ cd /var/www/pterodactyl || { echo "Direktori tidak ditemukan"; exit 1; }
 php artisan p:user:make <<EOF
 yes
 hackback@gmail.com
-$user
-$user
-$user
-$psswdhb
+$zeroo
+$zeroo
+$zeroo
+$zeroo
 EOF
   echo -e "                                                       "
   echo -e "${GREEN}[+] =============================================== [+]${NC}"
